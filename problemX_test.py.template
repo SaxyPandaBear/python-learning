@@ -1,0 +1,11 @@
+import unittest
+import foo
+
+class ProblemXTest(unittest.TestCase):
+
+    def test_foo_function(self):
+        expectedValue = something
+        self.assertEqual(something, foo.function())
+
+if __name__ == '__main__':
+    unittest.main()
