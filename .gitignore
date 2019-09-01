@@ -1,2 +1,10 @@
 /**/__pycache__
 /**/*.pyc
+
+# ignore any file except the expected files in problem 4
+# because it reads and writes files
+/problem4/*
+!*/problem4/problem4_test.py
+!*/problem4/read_files.py
+!*/problem4/write_files.py
+!*/problem4/ReadWrite.md
