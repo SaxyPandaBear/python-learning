@@ -10,7 +10,7 @@ import json  # use the json library to parse JSON data
 
 """
 Given a file path that is expected to point to an existing file, read all of 
-the lines in the file and print each of them to the console.
+the characters in the file and print each of them to the console.
 """
 def read_file(filepath):
     pass

@@ -66,6 +66,7 @@ class Problem2Test(unittest.TestCase):
         sys.stdout = sys.__stdout__
         self.assertIsNone(result)
         self.assertEqual(sentence, out.getvalue().strip())
+        out.close()
 
     def test_print_letter_count(self):
         out = io.StringIO()
@@ -75,6 +76,7 @@ class Problem2Test(unittest.TestCase):
         sys.stdout = sys.__stdout__
         self.assertIsNone(result)
         self.assertEqual(expected, out.getvalue().strip())
+        out.close()
 
     def test_replace(self):
         self.assertEqual("Goodbye, world!", puzzles.replace("Hello, world!", "Hello", "Goodbye"))
