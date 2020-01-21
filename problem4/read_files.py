@@ -33,6 +33,13 @@ def read_file_as_lines(filepath):
 Given a filename and the path where the file exists, read all of the lines in 
 the file and print each of them to the console. This should be the same 
 functionality as the other read_file() function.
+
+The parameters should conform to the following assumptions.
+Must validate this before attempting the read:
+1. the path parameter MUST end with a trailing '/' character
+2. the filename MUST NOT start /with a leading '/' character
+If either of these conditions are not met, then an Exception must be raised.
+Use the TestException class provided
 """
 def read_file(some_path, filename):
     pass
@@ -40,11 +47,11 @@ def read_file(some_path, filename):
 """
 Given a filepath to where a json file is, attempt to read it. If the read fails,
 the json module will raise a JSONDecodeError. In this function, the goal is to 
-catch the JSONDecodeError if it occurs.
+catch the JSONDecodeError if it occurs, and return false
 
 If an exception is raised that is NOT a JSONDecodeError, you should just raise
 it again. If it is a JSONDecodeError, return False. If no error occurred, 
 return True.
 """
-def is_valid_json(jsonfile):
+def is_valid_json(filepath):
     pass

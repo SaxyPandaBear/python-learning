@@ -19,7 +19,5 @@ To validate your code, run `python problem4_test.py`
 - Reading from files
 - Writing to files
 - List operations
-- Iterating over strings
-- Dictionaries
 - Introduction to working with JSON data
 - Introduction to method / function overloading
