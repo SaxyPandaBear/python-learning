@@ -8,7 +8,7 @@ takes two numbers and returns the sum of them.
 Example: add(1, 2) should return 3
 """
 def add(x, y):
-    return x+y
+    pass
 
 """
 takes two numbers and returns the product of them.
@@ -16,7 +16,7 @@ takes two numbers and returns the product of them.
 Example: multiply(2, 5) should return 10
 """
 def multiply(x, y):
-    return x * y
+    pass
 
 """
 takes two numbers and returns the remainder of n / d.
@@ -27,7 +27,7 @@ Example: remainder(4, 2) should return 0
 Example: remainder(0, 5) should return 0
 """
 def remainder(numerator, divisor):
-    return numerator % divisor
+    pass
 
 """
 takes a list of numbers and returns the sum of all of the numbers in the list.
@@ -38,7 +38,7 @@ Example: add_all([]) should return 0
 Example: add_all([600]) should return 600
 """
 def add_all(numbers):
-    return sum(numbers)
+    pass
 
 """
 takes a number and a list of numbers, then returns the result of
@@ -49,4 +49,4 @@ Example: subtract_from(5, [1,2,3]) should return -1 because 5 - 1 - 2 - 3 = -1
 Example: subtract_from(100, []) should return 100
 """
 def subtract_from(num, numbers):
-    return num - sum(numbers)
+    pass
