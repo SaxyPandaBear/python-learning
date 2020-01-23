@@ -50,3 +50,27 @@ Example: subtract_from(100, []) should return 100
 """
 def subtract_from(num, numbers):
     pass
+
+
+"""
+takes a number and returns True if the number is odd, False otherwise
+
+How do you know if a number is odd? 
+
+Example: is_odd(5) should return True
+Example: is_odd(8) should return False
+"""
+def is_odd(num):
+    pass
+
+
+"""
+takes a number and returns True if the number is even, False otherwise
+
+Hint: If a number is even, can it also be odd? 
+
+Example: is_even(5) should return False
+Example: is_even(8) should return True
+"""
+def is_even(num):
+    pass

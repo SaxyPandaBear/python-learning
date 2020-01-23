@@ -44,6 +44,14 @@ class Problem1Test(unittest.TestCase):
         self.assertEqual(100, calculator.subtract_from(z, zs))
         self.assertEqual(15, calculator.subtract_from(w, ws))
 
+    def test_is_odd(self):
+        self.assertTrue(calculator.is_odd(5))
+        self.assertFalse(calculator.is_odd(10))
+
+    def test_is_even(self):
+        self.assertFalse(calculator.is_even(5))
+        self.assertTrue(calculator.is_even(10))
+
 
 if __name__ == '__main__':
     unittest.main()
