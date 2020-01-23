@@ -1,0 +1,23 @@
+What is a mathematical intersection?
+An intersection between two mathematical sets is defined as the 
+subset of values that coincide in both sets.
+
+Example:
+A = {1, 2, 3}
+B = {3, 4, 5}
+A n B = {3}  <- using "n" to denote the intersection operation
+
+The Problem:
+============
+
+Given two lists of unique integers (like a set), find the intersection 
+of the two lists.
+
+Assumptions: 
+- The two lists are guaranteed to be in ascending order
+    ex: [1,2,3,4,5] and [2,5,7,10,13]
+- The values within a single list will be unique
+
+Grading:
+A test suite will be provided which will count for roughly 80% of the assignment. 
+The remainder of the grade will be from manual inspection.
