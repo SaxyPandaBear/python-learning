@@ -12,3 +12,7 @@ Each problem directory has a problem statement in a Markdown (md) file, and a te
 Example: `python problem1_test.py`
 
 Running this will show number of successes and failures for the code.
+
+There is a prerequisite reading document within each problem section 
+(other than the advanced problems section). The readings are done in the README for
+each subfolder.

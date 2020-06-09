@@ -1,0 +1,44 @@
+You're given a rectangular Pitri dish for a computer
+to scan. The computer program is able to identify a 
+specific species of amoeba within a sector of the 
+Pitri dish. The program outputs an N x M grid of 1's 
+or 0's. A 1 in the grid indicates that the cell 
+contains an amoeba. A 0 indicates there isn't an amoeba 
+covering that cell. This is a very particular amoeba that 
+only stretches out in the four cardinal directions: north,
+south, east, and west. Amoeba will not collide with each other,
+and will never stretch diagonally.
+
+The Problem:
+============
+You are tasked with taking the output of the computer vision 
+program and determining how many amoebas exist on the Pitri 
+dish. Given a grid of N x M 1's and 0's, return the number 
+of amoebas that exist on the dish.
+
+Assumptions:
+- 1's that are only connected diagonally do not count as the same entity
+
+Examples: 
+In: 5x5 grid
+1 | 0 | 0 | 1 | 1
+0 | 1 | 0 | 1 | 0
+0 | 0 | 1 | 1 | 0
+0 | 1 | 1 | 0 | 0 
+1 | 1 | 0 | 1 | 0
+Out: 4
+Explanation:
+At (0,0) there is an amoeba
+At (1,1) there is an amoeba
+At (3,4) there is an amoeba
+There is a single amoeba that spans the coordinates: 
+[(0,3), (0,4), (1,3), (2,2), (2,3), (3,1), (3,2), (4,0), (4,1)]
+
+In: 3x3 grid
+1 | 0 | 0 
+0 | 1 | 0 
+0 | 0 | 1
+Out: 3
+Explanation:
+All of the amoebas in the grid are not connected, so they are 3 separate entities
+

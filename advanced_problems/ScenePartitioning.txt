@@ -1,0 +1,35 @@
+You're given a sequence of "scenes", for a video clip. 
+They are given to you with uniquely identifiable names - 
+a scene can be repeated.
+Ex: [a, b, c, a, e, f, g, h, e, i, j, k, i]
+In this example, there are two scenes in the sequence that 
+are identifiable as "a", because they are the same scene.
+
+The Problem:
+============
+You are tasked with partitioning the sequence of scenes so that 
+any scene only appears in once in a partition. Then, you are to 
+return a list of counts denoting the length of the partitions.
+
+Assumptions:
+- The input list is non-empty
+
+
+Examples:
+In: [a, b, c, a, e, f, g, h, e, i, j, k, i]
+Out: [4, 5, 4]
+Explanation:
+The first partition contains 4 values in it, which are [a,b,c,a]
+The second partition contains 5 values in it, which are [e,f,g,h,e]
+The third partition contains 4 values in it, which are [i.j,k,i]
+
+In: [a, b, c]
+Out: [1, 1, 1]
+Explanation:
+All of the scenes are entirely unique, so they must be in separate 
+partiions.
+
+In: [a, b, c, d, a]
+Out: [5]
+Explanation: 
+All of the scenes can be grouped in one partition 

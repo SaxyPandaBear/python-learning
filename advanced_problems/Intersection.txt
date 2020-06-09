@@ -16,8 +16,27 @@ of the two lists.
 Assumptions: 
 - The two lists are guaranteed to be in ascending order
     ex: [1,2,3,4,5] and [2,5,7,10,13]
-- The values within a single list will be unique
+- The values within a single list will be unique (think of the lists as mathematical sets)
 
-Grading:
-A test suite will be provided which will count for roughly 80% of the assignment. 
-The remainder of the grade will be from manual inspection.
+Examples:
+In: [1,2,3,4,5], [2,5,7,10,13]
+Out: [2,5]
+Explanation:
+2 and 5 are the only values that are shared between the two lists.
+
+In: [1,2,3], [4,5,6]
+Out: []
+Explanation: 
+There are no shared values between the lists, so we return an empty intersection
+
+In: [1], [1]
+Out: [1]
+Explanation:
+The two lists are identical, coincidentally, so we return that same list
+
+In: [1,2,3], []
+Out: []
+Explanation:
+There cannot be a non-empty intersection when one of the sets is the empty set.
+Therefore, the only result of an intersection with the empty set should be 
+the empty set.
