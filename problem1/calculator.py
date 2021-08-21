@@ -2,12 +2,15 @@
 Module that defines some basic math calculation utility functions
 """
 
-"""
-takes two numbers and returns the sum of them.
+def add(x: int, y: int) -> int:
+    """
+    takes two numbers and returns the sum of them.
 
-Example: add(1, 2) should return 3
-"""
-def add(x, y):
+    Example: add(1, 2) should return 3
+    :param x a number
+    :param y another number
+    :return the sum of x and y
+    """
     pass
 
 """
@@ -15,7 +18,7 @@ takes two numbers and returns the product of them.
 
 Example: multiply(2, 5) should return 10
 """
-def multiply(x, y):
+def multiply(x: int, y: int) -> int:
     pass
 
 """
@@ -60,7 +63,7 @@ How do you know if a number is odd?
 Example: is_odd(5) should return True
 Example: is_odd(8) should return False
 """
-def is_odd(num):
+def is_odd(num: int):
     pass
 
 

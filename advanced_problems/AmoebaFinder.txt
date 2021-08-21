@@ -42,3 +42,33 @@ Out: 3
 Explanation:
 All of the amoebas in the grid are not connected, so they are 3 separate entities
 
+Dive deeper:
+============
+
+Once you've solved how to count the number of amoeba in the Pitri dish,
+let's assume that we're able to categorize different species of micro-organisms
+on the same Pitri dish. These organsims are all bucketed into the alphabet letters
+a-f, for simplicity sake. How would you modify your solution above to count a single
+species of amoeba to extend the functionality to output a map that associates
+the species category with the number of organisms of that category on the Pitri dish?
+
+Examples: 
+In: 5x5 grid
+a | a | 0 | c | c
+0 | 0 | b | c | 0
+f | f | d | b | 0
+0 | d | d | 0 | 0 
+f | 0 | 0 | f | 0
+Out:
+{
+    "a": 1,
+    "b": 2,
+    "c": 1,
+    "d": 1,
+    "f": 3
+}
+Explanation:
+Using the same rules as before,
+There is one organism of class 'a' spanning (0,0) and (0,1)
+There are two organisms of class 'b' because the diagonal rule still applies.
+etc

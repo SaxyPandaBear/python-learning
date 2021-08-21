@@ -1,6 +1,74 @@
 Reading 1
 =========
 
+## Brushing up on Python syntax
+There is an assumption of basic exposure to Python prior to starting
+this, but just to go over some of the things here. 
+
+Python is a scripting language, and as such, a Python file 
+(the `.py` extension) is always technically some form of script. Now,
+we don't always use them that way. For example, in this exercise, you
+are expected to make modifications to the `calculator.py` file, but
+we aren't running a script within that file. It acts as a utility of sorts,
+that we are using in another Python script file, `problem1_test.py`.
+
+### The anatomy of a Python function
+Functions are probably the most important piece of code inside of a Python
+script. Let's take an example from `calculator.py` and deconstruct it, since
+some additions in Python 3.7+ have made Python code more readable and maintainable,
+but may not be common knowledge for people just starting, or moving from a 
+different language.
+
+```python
+def add(x: int, y: int) -> int:
+    """
+    takes two numbers and returns the sum of them.
+
+    Example: add(1, 2) should return 3
+    :param x a number
+    :param y another number
+    :return the sum of x and y
+    """
+    pass
+```
+
+Starting at the top, we have the function definition. To tell Python we
+want to create a new function, we use the `def` keyword, followed by
+the name of the function we want to write. In this case, the name of the
+function in is `add`. After the name of the function, we list out the
+parameters (also known as arguments) of the function. 
+
+Here, we are saying that our add function requires two parameters, 
+`x` and `y`. These are the names of the variables that we can 
+reference inside of our function. When someone calls the add function,
+we can reference the input used with those variable names. 
+For example, if I call `add(1, 2)`, then `x` is 1, and `y` is 2 
+when I call it. If you call `add(2, 3)`, then `x` is 2, and `y` 
+is 3, for when you called the function.
+
+Next thing to look at is the _type annotation_ on the function parameters.
+Specifically, let's look at `x: int`. This is a way for us as the developer
+to tell other developers "Hey, I am defining this parameter as 'x', and I
+am expecting the value to be of type `int`." It's important to note that
+Python is a weakly typed, dynamic language. Even though we are saying that
+we expect a number for that parameter, that does not stop someone from using
+our add function and providing something else that may not work, like a string.
+We have to be very diligent when writing Python code, to make sure that we
+account for misuse of our functions.
+
+Skipping on ahead in the function definition, after the parameters are defined,
+we have another type annotation that denotes what we expect the return type of
+the function to be. In the case of the add function, we have ` -> int:`, so
+we are saying that we expect the add function to return an int.
+
+**Note that the type annotations for the function parameters and return value
+and purely optional, but they can help with readability**.
+
+After the function definition, here we have a block comment in the form of
+triple quotes. This is documentation on our function. Here, we can write whatever
+useful information we may want to, to help developers (including ourselves)
+understand what this function does at a glance.
+
 ## Math Operations
 
 In Python, you can do basic arithmetic pretty easily. It can compute things
