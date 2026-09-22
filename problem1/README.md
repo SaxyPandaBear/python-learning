@@ -12,6 +12,8 @@ are expected to make modifications to the `calculator.py` file, but
 we aren't running a script within that file. It acts as a utility of sorts,
 that we are using in another Python script file, `problem1_test.py`.
 
+> This crash course won't really cover the use cases of libraries/modules.
+
 ### The anatomy of a Python function
 Functions are probably the most important piece of code inside of a Python
 script. Let's take an example from `calculator.py` and deconstruct it, since

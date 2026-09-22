@@ -3,6 +3,11 @@ Python Coding Problems
 
 Beginner programming challenges in Python.
 
+> Note about agents: If you choose to engage with these exercises but rely
+on agents to write the code for you, you're kind of missing the point of
+the exercises to begin with. I encourage you to learn how to write Python code
+without the assistance of AI. None of these problems should be that complex.
+
 ### Setup
 
 Problems in this repo should be done using Python 3+. If you want, you can set up a `virtualenv` (how to do this will not be covered in this README) to point to Python 3.x 

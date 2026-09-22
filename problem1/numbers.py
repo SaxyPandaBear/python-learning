@@ -29,7 +29,7 @@ Example: remainder(100, 37) should return 26
 Example: remainder(4, 2) should return 0
 Example: remainder(0, 5) should return 0
 """
-def remainder(numerator, divisor):
+def remainder(numerator: int, divisor: int):
     pass
 
 """
@@ -40,7 +40,7 @@ Example: add_all([1,2,3,4,5]) should return 15
 Example: add_all([]) should return 0
 Example: add_all([600]) should return 600
 """
-def add_all(numbers):
+def add_all(numbers: list[int]):
     pass
 
 """
@@ -51,14 +51,14 @@ Example: subtract_from(10, [2,4]) should return 4 because 10 - 2 - 4 = 4
 Example: subtract_from(5, [1,2,3]) should return -1 because 5 - 1 - 2 - 3 = -1
 Example: subtract_from(100, []) should return 100
 """
-def subtract_from(num, numbers):
+def subtract_from(num: int, numbers: list[int]):
     pass
 
 
 """
 takes a number and returns True if the number is odd, False otherwise
 
-How do you know if a number is odd? 
+How do you know if a number is odd?
 
 Example: is_odd(5) should return True
 Example: is_odd(8) should return False
@@ -70,10 +70,10 @@ def is_odd(num: int):
 """
 takes a number and returns True if the number is even, False otherwise
 
-Hint: If a number is even, can it also be odd? 
+Hint: If a number is even, can it also be odd?
 
 Example: is_even(5) should return False
 Example: is_even(8) should return True
 """
-def is_even(num):
+def is_even(num: int):
     pass
