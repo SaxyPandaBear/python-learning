@@ -33,29 +33,6 @@ def remainder(numerator: int, divisor: int):
     pass
 
 """
-takes a list of numbers and returns the sum of all of the numbers in the list.
-If the list of numbers is empty, it should return 0
-
-Example: add_all([1,2,3,4,5]) should return 15
-Example: add_all([]) should return 0
-Example: add_all([600]) should return 600
-"""
-def add_all(numbers: list[int]):
-    pass
-
-"""
-takes a number and a list of numbers, then returns the result of
-subtractiong all of the numbers in the list from the first parameter.
-
-Example: subtract_from(10, [2,4]) should return 4 because 10 - 2 - 4 = 4
-Example: subtract_from(5, [1,2,3]) should return -1 because 5 - 1 - 2 - 3 = -1
-Example: subtract_from(100, []) should return 100
-"""
-def subtract_from(num: int, numbers: list[int]):
-    pass
-
-
-"""
 takes a number and returns True if the number is odd, False otherwise
 
 How do you know if a number is odd?

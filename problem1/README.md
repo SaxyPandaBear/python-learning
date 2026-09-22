@@ -8,7 +8,7 @@ this, but just to go over some of the things here.
 Python is a scripting language, and as such, a Python file 
 (the `.py` extension) is always technically some form of script. Now,
 we don't always use them that way. For example, in this exercise, you
-are expected to make modifications to the `calculator.py` file, but
+are expected to make modifications to the `numbers.py` file, but
 we aren't running a script within that file. It acts as a utility of sorts,
 that we are using in another Python script file, `problem1_test.py`.
 
@@ -16,7 +16,7 @@ that we are using in another Python script file, `problem1_test.py`.
 
 ### The anatomy of a Python function
 Functions are probably the most important piece of code inside of a Python
-script. Let's take an example from `calculator.py` and deconstruct it, since
+script. Let's take an example from `numbers.py` and deconstruct it, since
 some additions in Python 3.7+ have made Python code more readable and maintainable,
 but may not be common knowledge for people just starting, or moving from a 
 different language.
@@ -105,31 +105,51 @@ This comes in handy when you need to evenly distribute things, or when you want
 to check if a number is odd or even. If the remainder is 0 when you mod by 2, then
 the number must be even!
 
-## List Operations
+## Booleans
+Booleans are straightforward, as they are either `True` or `False`. In some languages,
+these values are represented by the literal values `1` and `0`, respectively. Booleans
+are best suited to be a descriptive type for answering yes-or-no questions. 
 
-We'll only touch on this briefly. A "list" is what we will refer to as a 
-sequence of things. In some languages, like Java, the types of things in 
-the list must be the same, but we won't get into that for the purposes of 
-this exercise. 
+For example, if I pose a question, "Is this number negative?", logically, you know how
+to determine this. **If** the number is zero, or greater than zero, then the number is
+*not* negative, thus `False`. 
 
-Things in a list in Python are grouped by brackets, `[]`. 
+> Note: if-else and branching code will be a part of a later problem.
 
-For example:
+### Comparison operators
+
+To actually answer yes-or-no questions like the one above in code, Python gives you
+comparison operators. Each one compares two values and evaluates directly to a `bool`
+(`True` or `False`), which you can return straight out of a function without needing
+`if`/`else` at all.
 
 ```python
-numbers = [1, 2, 4, 5, 6, 7, 8, 9]
+x == y  # is x equal to y?
+x != y  # is x NOT equal to y?
+x > y   # is x greater than y?
+x < y   # is x less than y?
+x >= y  # is x greater than or equal to y?
+x <= y  # is x less than or equal to y?
 ```
 
-Now we have a list of numbers, ranging from 1 to 9.
+Note that `==` (comparison) is different from `=` (assignment). `x = 5` sets `x` to 5,
+while `x == 5` asks "does `x` currently equal 5?" and gives back `True` or `False`.
+
+Combining this with modular division from above, you can check whether a number is
+even by asking whether the remainder after dividing by 2 is equal to 0:
+
+```python
+num % 2 == 0  # True if num is even, False otherwise
+```
 
 ## My First Function
 
 Writing functions in Python are helpful for illustrating a specific
 action that we want to take. Using problem 1 as an example, I want
-a way to tell if two numbers are the same.
+a way to tell if a number is odd.
 
 ```python
-def is_odd(num):
+def is_odd(num: int):
     # some code goes here!
 ```
 
@@ -139,3 +159,16 @@ The structure of a function follows this pattern:
 3. After the name of the function, you can list the _parameters_ that you want the function to take. In the above example, we are saying that we expect a `num`, which is just a placeholder name of some value, that we want to use as part of the function.
 4. The function closes with a `:`
 5. All of the code of the function is indented
+
+## Running the tests
+
+Once you've filled in the functions in `numbers.py`, you can check your work by
+running the test suite. From inside the `problem1` folder (not the root of the
+repository), run:
+
+```
+python3 problem1_test.py
+```
+
+This will report how many tests passed and, for any failures, which function
+produced the wrong answer.
